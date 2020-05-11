@@ -1,0 +1,78 @@
+<?php
+	class Log_Paciente{
+		// fono1 = $parametros['frm_telefonoFijo']
+		// fono2 = $parametros['frm_telefonoCelularAvis']
+		// fono3 = $parametros['frm_telefono_laboral']
+		function registrar_log($objCon, $parametros){
+			$sql = "INSERT INTO log_paciente (
+				  				log_paciente.fecha,
+				  				log_paciente.hora,
+				  				log_paciente.usuario,
+				  				log_paciente.tipo,
+				  				log_paciente.id_paciente,
+				  				log_paciente.rut,
+				  				log_paciente.paterno,
+				  				log_paciente.materno,
+				  				log_paciente.nombres,
+				  				log_paciente.prevision,
+							    log_paciente.convenio,
+							    log_paciente.nro_ficha,
+							    log_paciente.nacimiento,
+							    log_paciente.fono1,
+							    log_paciente.fono2,
+							    log_paciente.fono3,							    
+							    log_paciente.sexo,
+			  				    log_paciente.id_trakcare,
+							    log_paciente.sistemas,
+								log_paciente.PACafro,
+								log_paciente.paisNacimiento,
+								log_paciente.region,
+								log_paciente.ciudad,
+								log_paciente.idcomuna,
+								log_paciente.calle,
+								log_paciente.numero,
+								log_paciente.restodedireccion,
+								log_paciente.conruralidad,
+								log_paciente.prais,
+								log_paciente.PACfonoOtros,
+								log_paciente.sector_domicilio,
+								log_paciente.etnia,
+								log_paciente.email)
+					VALUES(CURRENT_DATE(),
+						   CURRENT_TIME(),
+						   '{$parametros['reg_usuario_insercion']}',
+						   '{$parametros['frm_tipoLog']}',
+						   '{$parametros['frm_id_paciente']}',
+						   '{$parametros['frm_rut_pac']}',
+						   '{$parametros['frm_AP']}',
+						   '{$parametros['frm_AM']}',
+						   '{$parametros['frm_nombres']}',
+						   '{$parametros['frm_prevision']}',
+						   '{$parametros['frm_convenio']}',
+						   '{$parametros['frm_nroFicha']}',
+						   '{$parametros['frm_Naciemito']}',
+						   '{$parametros['frm_telefonoFijo']}',
+						   '{$parametros['frm_telefonoCelularAvis']}',
+						   '{$parametros['frm_telefono_laboral']}',						   
+						   '{$parametros['frm_sexo']}',
+					       '{$parametros['frm_id_trakcare']}',
+						   '{$parametros['frm_sistemas']}',
+						   '{$parametros['frm_afrodescendiente']}',
+						   '{$parametros['frm_pais_nacimiento']}',
+						   '{$parametros['frm_region']}',
+						   '{$parametros['frm_ciudad']}',
+						   '{$parametros['frm_comuna']}',
+						   '{$parametros['frm_nombreCalle']}',
+						   '{$parametros['frm_numeroDireccion']}',
+						   '{$parametros['frm_direccion']}',
+						   '{$parametros['frm_tipoDomicilio']}',
+						   '{$parametros['frm_prais']}',
+						   '{$parametros['frm_otrosTelefonos']}',
+						   '{$parametros['frm_sectorDomicilio']}',
+						   '{$parametros['frm_etnia']}',
+						   '{$parametros['frm_correo']}')";
+					$response = $objCon->ejecutarSQL($sql, "Error al Insertar Log de Paciente");
+					//return $objCon->lastInsertId();
+		}
+	}
+?>

@@ -1,0 +1,248 @@
+/*FUENTES*/
+@font-face {
+	font-family: Anivers Regular;
+	src: url('/indice_paciente_2017/assets/fonts/Anivers-Regular.otf');
+}
+@font-face {
+	font-family: SourceSansPro-Semibold;
+	src: url('/indice_paciente_2017/assets/fonts/SourceSansPro-Semibold.ttf');
+}
+body{
+	margin-left: 2%;
+	margin-right: 2%;
+}
+body.modal-open {
+	overflow: auto;
+}
+body.modal-open[style] {
+	padding-right: 0px !important;
+}
+body.modal[style] {
+	padding-right: 0px !important;
+}
+.modal::-webkit-scrollbar {
+	width: 0 !important;
+}
+.titulos{
+	font-family: 'Anivers Regular', Fallback, sans-serif;
+}
+.encabezado{
+	color:#337ab7;
+	font-size: 16px;
+	font-family: 'SourceSansPro-Semibold', Fallback, sans-serif;
+}
+.detalle{
+	font-size: 15px;
+	font-family: 'SourceSansPro-Semibold', Fallback, sans-serif;
+}
+.puntero{
+	cursor: pointer;
+}
+.badge-red{
+	background-color: #F00000;
+}
+h1, .h1 {
+	margin-top: 10px;
+}
+.navbar {
+	margin-bottom: 0px;
+}
+.accion {
+	cursor: pointer;
+	opacity:1.0;
+	filter:alpha(opacity=100);
+	transition:opacity 0.3s ease;
+}
+.accion:hover {
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	cursor:pointer;
+	transition:opacity 0.3s ease;
+}
+.modal-content{
+	border-radius: 1px;
+}
+#modalContenido{
+	/*background-color: #DBEDFA;*/
+}
+#modalContenido .modal-footer {
+	padding: 10px;
+}
+.btn_volver{
+	float:left;
+	margin-top: 12px;
+}
+h3 {
+	width:100%;
+	text-align:left;
+	border-bottom: 2px solid #337ab7;
+	line-height:0.1em;
+	margin:10px 0 20px;
+	margin-top: 30px;
+	font-size: 22px;
+}
+h3 span {
+	margin-top: 10px;
+	background:#fff;
+	padding:0 10px;
+}
+
+textarea {
+	resize: none;
+}
+.btn{
+	font-size: 14px;
+	font-family: 'SourceSansPro-Semibold', Fallback, sans-serif;
+}
+.btn-primary{
+	background-color: #337ab7;
+}
+.derecha{
+	float: right;
+}
+.inputSmall{
+	width: 120px;
+}
+.inputDetalle{
+	font-size: 15px;
+	font-family: 'SourceSansPro-Semibold', Fallback, sans-serif;
+}
+.ui-autocomplete {
+	height: 50%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 50%;
+}
+.ui-autocomplete-loading {
+	background:url('/indice_paciente_2017/assets/img/loading-autocomplete.gif') right center no-repeat;
+}
+.modal {
+	text-align: center;
+	padding: 0!important;
+}
+
+.modal:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -4px;
+}
+
+.modal-dialog {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+.salto{
+	margin-top: 2% !important;
+}
+.legend{
+	height: 30px;
+	width: 70px;
+}
+.ordenPortal{
+	background-color: #D2D2D2;
+}
+.loadingBlock{
+	font-size: 24px;
+	font-family: 'SourceSansPro-Semibold', Fallback, sans-serif;
+	color: white;
+	margin-left: 10px;
+}
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a{
+	background-color: #337ab7;
+	color: #FFFFFF;
+}
+#selectable .ui-selecting{
+	background: #B3CFF5;
+}
+#selectable .ui-selected{
+	background: #5A9CF2;
+	color: white;
+}
+.alinear-derecha{
+	display: block;
+	text-align: right;
+}
+.anchoTotal{
+	width:100% !important;
+}
+.mitad{
+	width:50% !important;
+}
+.rojo{
+	color: #a94442;
+	font-weight: bold;
+	border-color: #ebccd1
+}
+.blanco{
+	color: white !important;
+}
+.amarillo{
+	color: #8a6d3b;
+	background-color: #fcf8e3;
+	border-color: #faebcc;
+}
+.bordeRojo{
+	border: 1px solid #f2dede;
+}
+.sinBodega{
+	background-color: #D8D8D8;
+}
+.desactivado{
+	cursor:not-allowed;
+}
+
+#boton_alerta {
+	background:#E1B505;
+	color: #FFFFFF;
+	border:none;
+	width:90px;
+	padding: 0px 2px;
+	height:23px;
+	border-radius:8px 8px 8px 8px;
+	cursor:pointer;
+}			
+
+#boton_volver{
+	background:#00B3FF;
+	color: #FFFFFF;
+	border:none;
+	width:100px;
+	padding: 0px 2px;
+	height:23px;
+	border-radius:8px 8px 8px 8px;
+	cursor:pointer;
+}			
+
+.titulo_certificador{
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+	
+}
+
+.sub_titulo_certificador{
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FF794D;
+	
+}
+
+.tit7 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight:  200;
+	text-transform: none;
+	/*color: #006699;*/
+	text-decoration: none;
+}
+
+.folio{
+	font-size:15px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FF794D;
+	
+}
